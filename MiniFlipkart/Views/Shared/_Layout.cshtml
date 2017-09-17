@@ -77,7 +77,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="total">
                                     <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)
                                 </div>
-                                <img src="images/cart.png" alt="" />
+                                <img src="@Url.Content("~/images/cart.png")" alt="" />
                             </h3>
                         </a>
                         <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
@@ -91,11 +91,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="container">
             <div class="head-top">
                 <div class="logo">
-                    <a href="index.html"><img src="images/logo.png" alt=""></a>
+                    <a href="@Url.Action("Index","Home",null)" />
+                        <img src="@Url.Content("~/images/logo.png")" alt="">
+                    </a>
                 </div>
                 <div class=" h_menu4">
                     <ul class="memenu skyblue">
-                        <li class="active grid"><a class="color8" href="index.html">Home</a></li>
+                        <li class="active grid">@Html.ActionLink("Home", "Index", "Home", null, null) </li>
                         <li>
                             <a class="color1" href="#">Men</a>
                             <div class="mepanel">
@@ -210,7 +212,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 </div>
                             </div>
                         </li>
-                        <li><a class="color4" href="blog.html">Blog</a></li>
+                        @*<li><a class="color4" href="blog.html">Blog</a></li>*@
+                        <li> @Html.ActionLink("Blog", "Blog", "Home", null, new { @class = "color4" })</li>
                         <li><a class="color6" href="contact.html">Conact</a></li>
                     </ul>
                 </div>

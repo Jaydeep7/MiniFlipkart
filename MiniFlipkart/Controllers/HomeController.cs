@@ -26,5 +26,10 @@ namespace MiniFlipkart.Controllers
 
             return View();
         }
+
+        public ActionResult Blog()
+        {
+            return View();
+        }
     }
 }
