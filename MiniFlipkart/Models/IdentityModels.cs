@@ -23,11 +23,18 @@ namespace MiniFlipkart.Models
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
+
+
         }
 
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<Category> categories { get; set; }
+        public DbSet<Item> items { get; set; }
     }
+
+    
 }
