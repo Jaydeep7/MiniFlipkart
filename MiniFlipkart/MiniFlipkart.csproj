@@ -177,6 +177,10 @@
     <Compile Include="Migrations\201709171029587_Create ItemMaster and CategoryMaster.Designer.cs">
       <DependentUpon>201709171029587_Create ItemMaster and CategoryMaster.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709181805242_addRecordToCategroy.cs" />
+    <Compile Include="Migrations\201709181805242_addRecordToCategroy.Designer.cs">
+      <DependentUpon>201709181805242_addRecordToCategroy.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Category.cs" />
@@ -316,6 +320,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201709171029587_Create ItemMaster and CategoryMaster.resx">
       <DependentUpon>201709171029587_Create ItemMaster and CategoryMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709181805242_addRecordToCategroy.resx">
+      <DependentUpon>201709181805242_addRecordToCategroy.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

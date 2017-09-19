@@ -39,5 +39,6 @@ namespace MiniFlipkart.Migrations
             DropTable("dbo.Items");
             DropTable("dbo.Categories");
         }
+
     }
 }
